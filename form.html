@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Worthiness Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Credit Worthiness Checker</h1>
+  <form id="creditForm">
+    <h2>Client Information</h2>
+    <label>Annual Income: <input type="number" id="annualIncome" required></label><br>
+    <label>Loan Amount Requested: <input type="number" id="loanAmount" required></label><br>
+    <label>Current Account Balance: <input type="number" id="accountBalance" required></label><br>
+    <label>Last Deposit (in months ago): <input type="number" id="lastDeposit" required></label><br>
+    <label>Last Loan Collection Date (in months ago): <input type="number" id="lastLoanCollection" required></label><br>
+    <label>Loan Repayment Period (in months): <input type="number" id="repaymentPeriod" required></label><br>
+    <label>Account Type:
+      <select id="accountType">
+        <option value="current">Current</option>
+        <option value="savings">Savings</option>
+      </select>
+    </label><br>
+    <button type="submit">Check Credit Worthiness</button>
+  </form>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
